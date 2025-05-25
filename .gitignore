@@ -105,14 +105,11 @@ PublishOutput/
 *.log
 *.cache
 
-# 忽略 Visual Studio 的用户特定文件
-*.vs/
-*.vscode/
-*.vsdbg/
-*.vsdbgcache/
-*.vsixlangpacks/
-*.vsixmanifest/
-*.vsix/
+# 忽略 build 文件夹
+build/
+
+# 忽略 node_modules 文件夹
+VarifyServer/node_modules/
 
 # 忽略 Visual Studio 的用户设置文件
 *.vs/
@@ -132,11 +129,3 @@ PublishOutput/
 *.vsixmanifest/
 *.vsix/
 
-# 忽略 Visual Studio 的用户特定文件夹
-*.vs/
-*.vscode/
-*.vsdbg/
-*.vsdbgcache/
-*.vsixlangpacks/
-*.vsixmanifest/
-*.vsix/
