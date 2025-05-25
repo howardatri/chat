@@ -1,0 +1,142 @@
+# Visual Studio 2022 .gitignore 文件
+
+# 忽略解决方案文件夹中的所有用户特定文件
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# 忽略项目文件夹中的所有用户特定文件
+*.csproj.user
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+*.csproj.DotSettings.user
+
+# 忽略生成的文件夹（如 bin 和 obj）
+bin/
+obj/
+
+# 忽略调试文件夹
+Debug/
+Release/
+
+# 忽略 NuGet 包文件夹
+packages/
+
+# 忽略 Visual Studio 的临时文件
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+*.vsixmanifest
+*.vsix
+*.cache
+
+# 忽略 Visual Studio 的用户设置文件
+*.vs/
+*.vscode/
+*.vsdbg/
+*.vsdbgcache/
+*.vsixlangpacks/
+*.vsixmanifest/
+*.vsix/
+*.vssscc
+*.vspscc
+*.vssscc
+*.vspscc
+*.vs
+*.vscode
+*.vsdbg
+*.vsdbgcache
+*.vsixlangpacks
+*.vsixmanifest
+*.vsix
+
+# 忽略 Visual Studio 的临时文件夹
+*.tmp
+*.tmp_proj
+*.log
+*.cache
+
+# 忽略 Visual Studio 的调试文件
+*.pdb
+*.userprefs
+*.suo
+*.user
+*.vspscc
+*.vssscc
+*.vs
+*.vscode
+*.vsdbg
+*.vsdbgcache
+*.vsixlangpacks
+*.vsixmanifest
+*.vsix
+
+# 忽略 Visual Studio 的生成文件
+*.exe
+*.dll
+*.pdb
+*.xml
+*.ilk
+*.exp
+*.lib
+
+# 忽略 Visual Studio 的测试结果文件
+TestResults/
+*.testsettings
+*.runsettings
+*.testrunconfig
+*.testmetadata
+
+# 忽略 Visual Studio 的项目文件中的临时文件
+*.csproj.FileListAbsolute.txt
+*.csprojResolveAssemblyReference.cache
+*.csproj.CoreCompileInputs.cache
+
+# 忽略 Visual Studio 的发布文件夹
+Publish/
+PublishOutput/
+
+# 忽略 Visual Studio 的临时文件夹
+*.tmp
+*.tmp_proj
+*.log
+*.cache
+
+# 忽略 Visual Studio 的用户特定文件
+*.vs/
+*.vscode/
+*.vsdbg/
+*.vsdbgcache/
+*.vsixlangpacks/
+*.vsixmanifest/
+*.vsix/
+
+# 忽略 Visual Studio 的用户设置文件
+*.vs/
+*.vscode/
+*.vsdbg/
+*.vsdbgcache/
+*.vsixlangpacks/
+*.vsixmanifest/
+*.vsix/
+
+# 忽略 Visual Studio 的用户特定文件夹
+*.vs/
+*.vscode/
+*.vsdbg/
+*.vsdbgcache/
+*.vsixlangpacks/
+*.vsixmanifest/
+*.vsix/
+
+# 忽略 Visual Studio 的用户特定文件夹
+*.vs/
+*.vscode/
+*.vsdbg/
+*.vsdbgcache/
+*.vsixlangpacks/
+*.vsixmanifest/
+*.vsix/
