@@ -26,7 +26,7 @@ enum Modules{
     REGISTERMOD = 0,
 };
 enum ErrorCodes{
-    SUSSESS = 0,
+    SUCCESS = 0,
     ERR_JSON = 1, //json 解析失败
     ERR_NETWORK = 2, //网络错误
 };
