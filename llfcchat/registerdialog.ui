@@ -282,7 +282,7 @@
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_6">
            <item>
-            <widget class="QPushButton" name="confirm_btn">
+            <widget class="QPushButton" name="sure_btn">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -301,7 +301,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="cancel_btn_2">
+            <widget class="QPushButton" name="cancel_btn">
              <property name="minimumSize">
               <size>
                <width>0</width>
