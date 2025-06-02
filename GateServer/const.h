@@ -20,6 +20,7 @@
 #include<condition_variable>
 #include "hiredis.h"
 #include<cassert>
+#include<memory>
 
 namespace beast = boost::beast;         // from <boost/beast.hpp>
 namespace http = beast::http;           // from <boost/beast/http.hpp>
@@ -37,6 +38,22 @@ enum ErrorCodes {
 	EmailNotMatch = 1007,  //邮箱不匹配
 	PasswdUpFailed = 1008,  //更新密码失败
 	PasswdInvalid = 1009,   //密码更新失败
+	RPCGetFailed = 1010,	//获取rpc请求失败
 };
+
+//Defer类
+class Defer {
+public:
+	//接受一个lambda表达式或函数指针
+	Defer(std::function<void()> func):func_(func){}
+
+	//析构函数执行传入的函数
+	~Defer() {
+		func_();
+	}
+private:
+    std::function<void()> func_;
+};
+
 
 #define CODEPREFIX "code_"
