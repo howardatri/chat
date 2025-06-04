@@ -219,6 +219,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="registerdialog.cpp" />
+    <ClCompile Include="resetdialog.cpp" />
     <ClCompile Include="timerbtn.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -228,6 +229,7 @@
     <QtMoc Include="logindialog.h" />
     <QtMoc Include="mainwindow.h" />
     <QtMoc Include="registerdialog.h" />
+    <QtMoc Include="resetdialog.h" />
     <ClInclude Include="singleton.h" />
     <ClInclude Include="timerbtn.h" />
   </ItemGroup>
@@ -251,6 +253,7 @@
     <QtUic Include="logindialog.ui" />
     <QtUic Include="mainwindow.ui" />
     <QtUic Include="registerdialog.ui" />
+    <QtUic Include="resetdialog.ui" />
   </ItemGroup>
   <ItemGroup>
     <None Include="res\add_friend_hover.png" />
