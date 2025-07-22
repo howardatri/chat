@@ -1,0 +1,21 @@
+{
+    "email": {
+      "user": "Howard22022@163.com",
+      "pass": "MRVm7GXVq5JSfA88"
+    },
+
+    "mysql": {
+      "host": "81.68.86.146",
+      "port": 3306,
+      "passwd":123456
+    },
+
+    "redis":{
+      "host": "81.68.86.146",
+      "port": 6380,
+      "passwd":123456
+    }
+}
+
+
+  
