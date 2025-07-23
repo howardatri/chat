@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{188AF3DE-5A2D-3F55-A368-C86EA26040F2}</ProjectGuid>
+    <ProjectGuid>{6B5BFE74-E876-3906-B2DE-72CCF5202EFA}</ProjectGuid>
     <RootNamespace>llfcchat</RootNamespace>
     <Keyword>QtVS_v304</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
@@ -220,6 +220,7 @@
     <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="registerdialog.cpp" />
     <ClCompile Include="resetdialog.cpp" />
+    <ClCompile Include="tcpmgr.cpp" />
     <ClCompile Include="timerbtn.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +232,7 @@
     <QtMoc Include="registerdialog.h" />
     <QtMoc Include="resetdialog.h" />
     <ClInclude Include="singleton.h" />
+    <QtMoc Include="tcpmgr.h" />
     <ClInclude Include="timerbtn.h" />
   </ItemGroup>
   <ItemGroup>

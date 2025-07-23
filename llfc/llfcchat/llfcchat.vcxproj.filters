@@ -81,6 +81,9 @@
     <ClCompile Include="resetdialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="tcpmgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="timerbtn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -110,6 +113,9 @@
     <ClInclude Include="singleton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <QtMoc Include="tcpmgr.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
     <ClInclude Include="timerbtn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -255,6 +261,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="F:\PROJECT\llfc\llfcchat\llfcchat_resource.rc" />
+    <ResourceCompile Include="F:\PROJECT\llfcpro\llfc\llfcchat\llfcchat_resource.rc" />
   </ItemGroup>
 </Project>
