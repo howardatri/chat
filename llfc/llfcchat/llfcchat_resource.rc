@@ -1,6 +1,6 @@
 #include <windows.h>
 
-IDI_ICON1	ICON	"F:\\PROJECT\\llfc\\llfcchat\\icon.ico"
+IDI_ICON1	ICON	"F:\\PROJECT\\llfcpro\\llfc\\llfcchat\\icon.ico"
 
 VS_VERSION_INFO VERSIONINFO
 	FILEVERSION 0,0,0,0
