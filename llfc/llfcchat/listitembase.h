@@ -11,6 +11,8 @@ public:
     void SetItemType(ListItemType itemType);
 
     ListItemType GetItemType();
+protected:
+    virtual void paintEvent(QPaintEvent* event) override;
 private:
     ListItemType _itemType;
 public slots:
