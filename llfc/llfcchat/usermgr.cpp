@@ -24,3 +24,13 @@ UserMgr::UserMgr()
 {
 
 }
+
+int UserMgr::GetUid()
+{
+    return _uid;
+}
+
+QString UserMgr::GetName()
+{
+    return _name;
+}
