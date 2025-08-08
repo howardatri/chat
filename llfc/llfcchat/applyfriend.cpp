@@ -7,7 +7,7 @@
 //#include "tcpmgr.h"
 
 ApplyFriend::ApplyFriend(QWidget *parent) :
-    QDialog(parent),
+    QDialog(),
     ui(new Ui::ApplyFriend),_label_point(2,6)
 {
     ui->setupUi(this);
