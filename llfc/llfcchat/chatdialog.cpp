@@ -7,7 +7,7 @@
 #include <QMouseEvent>
 
 ChatDialog::ChatDialog(QWidget *parent)
-    : QDialog(parent)
+    : QDialog(parent),_last_widget(nullptr)
     , ui(new Ui::ChatDialog),_b_loading(false),_mode(ChatUIMode::ChatMode),_state(ChatUIMode::ChatMode)
 {
     ui->setupUi(this);
@@ -198,7 +198,12 @@ void ChatDialog::slot_side_contact(){
     qDebug()<< "receive side contact clicked";
     ClearLabelState(ui->side_contact_lb);
     //设置
-    ui->stackedWidget->setCurrentWidget(ui->friend_apply_page);
+    if(_last_widget == nullptr){
+        ui->stackedWidget->setCurrentWidget(ui->friend_apply_page);
+        _last_widget = ui->friend_apply_page;
+    }else{
+        ui->stackedWidget->setCurrentWidget(_last_widget);
+    }
     _state = ChatUIMode::ContactMode;
     ShowSearch(false);
 }

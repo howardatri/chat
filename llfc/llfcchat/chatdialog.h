@@ -29,6 +29,7 @@ private:
     ChatUIMode _state;
     bool _b_loading;
     QList<StateWidget*> _lb_list;
+    QWidget* _last_widget;
 private slots:
     void slot_loading_chat_user();
     void slot_side_chat();
