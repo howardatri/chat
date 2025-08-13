@@ -76,6 +76,8 @@ ChatDialog::ChatDialog(QWidget *parent)
     this->installEventFilter(this); // 安装事件过滤器
     //设置聊天label选中状态
     ui->side_chat_lb->SetSelected(true);
+    //设置中心部件为chatpage
+    ui->stackedWidget->setCurrentWidget(ui->chat_page);
 }
 
 ChatDialog::~ChatDialog()
