@@ -500,7 +500,7 @@ void ApplyFriend::SlotApplySure()
     // QJsonDocument doc(jsonObj);
     // QString jsonString = doc.toJson(QJsonDocument::Indented);
 
-    // //发送tcp请求给chat server
+    // //发送tcp请求给chat server 记得改为qbytearray
     // emit TcpMgr::GetInstance()->sig_send_data(ReqId::ID_ADD_FRIEND_REQ, jsonString);
     // this->hide();
     // deleteLater();
