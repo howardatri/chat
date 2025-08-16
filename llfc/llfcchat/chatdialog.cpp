@@ -78,6 +78,8 @@ ChatDialog::ChatDialog(QWidget *parent)
     ui->side_chat_lb->SetSelected(true);
     //设置中心部件为chatpage
     ui->stackedWidget->setCurrentWidget(ui->chat_page);
+    //为searchlist 设置search edit
+    ui->search_list->SetSearchEdit(ui->search_edit);
 }
 
 ChatDialog::~ChatDialog()
