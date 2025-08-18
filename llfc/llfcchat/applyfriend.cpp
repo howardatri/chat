@@ -4,7 +4,7 @@
 #include "friendlabel.h"
 #include <QScrollBar>
 #include "usermgr.h"
-//#include "tcpmgr.h"
+#include "tcpmgr.h"
 
 ApplyFriend::ApplyFriend(QWidget *parent) :
     QDialog(),
@@ -477,33 +477,33 @@ void ApplyFriend::SlotAddFirendLabelByClickTip(QString text)
 
 void ApplyFriend::SlotApplySure()
 {
-    // qDebug()<<"Slot Apply Sure called" ;
-    // //发送请求逻辑
-    // QJsonObject jsonObj;
-    // auto uid = UserMgr::GetInstance()->GetUid();
-    // jsonObj["uid"] = uid;
-    // auto name = ui->name_ed->text();
-    // if(name.isEmpty()){
-    //     name = ui->name_ed->placeholderText();
-    // }
+    qDebug()<<"Slot Apply Sure called" ;
+    //发送请求逻辑
+    QJsonObject jsonObj;
+    auto uid = UserMgr::GetInstance()->GetUid();
+    jsonObj["uid"] = uid;
+    auto name = ui->name_ed->text();
+    if(name.isEmpty()){
+        name = ui->name_ed->placeholderText();
+    }
 
-    // jsonObj["applyname"] = name;
+     jsonObj["applyname"] = name;
 
-    // auto bakname = ui->back_ed->text();
-    // if(bakname.isEmpty()){
-    //     bakname = ui->back_ed->placeholderText();
-    // }
+     auto bakname = ui->back_ed->text();
+    if(bakname.isEmpty()){
+        bakname = ui->back_ed->placeholderText();
+    }
 
-    // jsonObj["bakname"] = bakname;
-    // jsonObj["touid"] = _si->_uid;
+     jsonObj["bakname"] = bakname;
+    jsonObj["touid"] = _si->_uid;
 
-    // QJsonDocument doc(jsonObj);
-    // QString jsonString = doc.toJson(QJsonDocument::Indented);
+    QJsonDocument doc(jsonObj);
+    QByteArray jsonString = doc.toJson(QJsonDocument::Compact);
 
-    // //发送tcp请求给chat server 记得改为qbytearray
-    // emit TcpMgr::GetInstance()->sig_send_data(ReqId::ID_ADD_FRIEND_REQ, jsonString);
-    // this->hide();
-    // deleteLater();
+    //发送tcp请求给chat server 记得改为qbytearray
+    emit TcpMgr::GetInstance()->sig_send_data(ReqId::ID_ADD_FRIEND_REQ, jsonString);
+    this->hide();
+    deleteLater();
 }
 
 void ApplyFriend::SlotApplyCancel()
