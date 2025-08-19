@@ -19,12 +19,18 @@ public:
     int GetUid();
     QString GetName();
     std::vector<std::shared_ptr<ApplyInfo>> GetApplyList();
+    bool AlreadyApply(int uid);
+    void AddApplyList(std::shared_ptr<ApplyInfo> app);
+    void SetUserInfo(std::shared_ptr<UserInfo> user_info);
+    void AppendApplyList(QJsonArray array);
+    //void AppendFriendList(QJsonArray array);
 private:
     UserMgr();
     QString _name;
     QString _token;
     int _uid;
     std::vector<std::shared_ptr<ApplyInfo>> _apply_list;
+        std::shared_ptr<UserInfo> _user_info;
 };
 
 
